@@ -1,0 +1,178 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap'); */
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root {
+  --primary-dark-color: hsl(14, 45%, 36%);
+  --primary-color: hsl(30, 54%, 90%);
+  --primary-light-color: hsl(30, 18%, 87%);
+  --secondary-color: hsl(30, 10%, 34%);
+  --secondary-dark-color: hsl(24, 5%, 18%);
+  --rose-dark-color: hsl(332, 51%, 32%);
+  --rose-light-color: hsl(330, 100%, 98%);
+  --light-color: hsl(0, 0%, 100%);
+  --light-gray:#eee;
+  --paragraph-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 1rem;
+  padding: 0;
+  padding-left: 0.8rem;
+}
+
+hr 
+{
+    color:var(--light-gray);
+    border-style: solid;
+    border-width: .1px;
+    border-radius: 1px;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+div.recipe-card {
+  background-color: var(--light-color);
+  width: 650px;
+  margin: 100px auto;
+  border-radius: 1rem;
+}
+
+div.recipe-card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+div.recipe-card h1 {
+  font-size: 2rem;
+  color: var(--secondary-dark-color);
+  font-family: "YoungSerif", serif;
+}
+
+div.recipe-card p {
+  color: var(--secondary-color);
+  font-family: "Outfit", serif;
+  font-size: 0.8rem;
+}
+
+div.recipe-card h2 {
+  color: var(--primary-dark-color);
+  font-family: "YoungSerif", serif;
+  font-size: 1.2rem;
+}
+
+div.recipe-card .recipe-card__preperationTime {
+  background-color: var(--rose-light-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+div.recipe-card .recipe-card__preperationTime h2 {
+  color: var(--rose-dark-color);
+  font-size: 0.9rem;
+  font-family: "Outfit", serif;
+}
+
+
+div.recipe-card ul li {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+/* div.recipe-card div.recipe-card__preperationTime ul li::before 
+{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height:3px;
+    border-radius: 100%;
+    background-color: var(--rose-dark-color);
+    vertical-align: baseline;
+} */
+
+div.recipe-card div.recipe-card__preperationTime ul li::marker {
+  color: var(--rose-dark-color);
+}
+
+div.recipe-card .recipe-card__ingredients ul li::marker,
+div.recipe-card .recipe-card__instructions ol li::marker {
+  color: var(--primary-dark-color);
+  font-weight: bold;
+}
+
+
+div.recipe-card div.recipe-card__preperationTime ul li span,
+ol span {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+div.recipe-card .recipe-card__preperationTime ul li,
+div.recipe-card .recipe-card__ingredients ul li,
+div.recipe-card .recipe-card__instructions ol li {
+  color: var(--secondary-color);
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+div.recipe-card ul li:last-of-type ,
+div.recipe-card ol li:last-of-type 
+{
+margin-bottom: 0;
+}
+
+table 
+{
+width:100%;
+border-collapse: collapse;
+
+}
+
+.recipe-card__nutrition table tr td
+{
+    border-bottom: 1px solid var(--light-gray);
+    padding: .5rem;
+    font-family: "Outfit", serif;
+    color:var(--secondary-color)
+}
+
+.recipe-card__nutrition table tr td:last-of-type{
+color:var(--primary-dark-color);
+font-weight: bold;
+}
+
+
+.recipe-card__nutrition table tr:last-of-type td{
+border-bottom: 0;
+}
+
+
+@media (max-width:767px) {
+    
+    div.recipe-card {
+        width:90%;
+        margin: auto;
+    }
+}
