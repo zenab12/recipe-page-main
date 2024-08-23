@@ -26,7 +26,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [recipe-page-solution](https://zenab12.github.io/recipe-page-main/)
+- Solution URL: [recipe-page-solution](https://github.com/zenab12/recipe-page-main/)
 - Live Site URL: [reciep-page Demo](https://zenab12.github.io/recipe-page-main/)
 
 ## My process
